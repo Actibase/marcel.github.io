@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcel Ghanm Habeeb | Freelancer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    /* Custom CSS for fade-in animation */
+    #welcomeHeading {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #welcomeHeading.fade-in {
+      opacity: 1;
+    }
+    #welcomeHeading2{
+        opacity:0;
+        transition: opacity 2s ease-in-out;
+    }
+    #welcomeHeading2.fade-in {
+      opacity: 1;
+    }
+    #profilePicture {
+      max-width: 400px;
+      margin: 0 auto;}
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Marcel Ghanm Habeeb</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Homepage Content -->
+  <header id="home" class="bg-primary text-white text-center py-5">
+    <div class="container">
+ 
+
+    <h1 class="display-4" id="welcomeHeading"><br>Welcome to Marcel Ghanm's Portfolio</h1>
+    <p class="lead" id="welcomeHeading2">Freelancer | Web Designer | Front-End Developer</p>
+    </div>
+    <div id="profilePicture">
+        <!-- Space for picture -->
+        <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded">
+      </div>
+    </header>
+    <!-- Include Bootstrap JS and custom JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+  // Custom JavaScript code
+  // Add 'fade-in' class to the heading to trigger fade-in animation
+  var heading = document.getElementById('welcomeHeading');
+  heading.classList.add('fade-in');
+  var heading = document.getElementById('welcomeHeading2');
+  heading.classList.add('fade-in');
+</script>
+
+  <section id="portfolio" class="bg-light py-5">
+    <div class="container">
+      <!-- Portfolio Section Content -->
+      <h2 class="text-center">Portfolio</h2>
+      <div class="container">
+        <div class="row">
+          <div class="Accomplishment">
+            <h3>EcoHelper</h3>
+            <p>Recycling Program Coordinator</p>
+            <ul>
+              <li>Coordinate and oversee a local recycling program, including managing collection logistics</li>
+              <li>Coordinating with waste management partners</li>
+              <li>Conducting community outreach to promote recycling and reduce waste</li>
+            </ul>
+          </div>
+          <div class="Accomplishment">
+            <h3>Tech Consultant</h3>
+            <p>Coding Academy Assistant</p>
+            <ul>
+              <li>Assist in the day-to-day operations of a coding academy, including administrative tasks</li>
+              <li>Student support, and event coordination</li>
+              <li>ensure smooth functioning of the program and positive learning experience for students</li>
+            </ul>
+          </div>
+          <div class="Accomplishment">
+            <h3>Health Assistant</h3>
+            <p>Health and Wellness App Assistant</p>
+            <ul>
+              <li>Support the operations of a health and wellness app, including managing social media accounts</li>
+              <li>assisting with customer support</li>
+              <li>providing input on app improvements based on user feedback, to help promote healthy living among app users</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Homepage Content -->
+<header id="home" class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Card -->
+        <div class="card">
+          <img src="example.jpg" class="card-img-top" alt="Image">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Card Description</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="display-4" id="welcomeHeading">Welcome to Marcel Ghanm's Portfolio</h1>
+    <p class="lead" id="welcomeHeading2">Freelancer | Web Designer | Front-End Developer</p>
+  </div>
+</header>
+
+  
+
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <!-- Contact Section Content -->
+      <h2 class="text-center">Contact</h2>
+      <form action="contact_form.php" method="post">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"
+            required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/path/to/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
